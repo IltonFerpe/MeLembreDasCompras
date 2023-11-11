@@ -11,6 +11,7 @@
 		F62733A22AFEDAFB005CD5B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F62733A12AFEDAFB005CD5B8 /* Assets.xcassets */; };
 		F62733A52AFEDAFB005CD5B8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F62733A42AFEDAFB005CD5B8 /* Preview Assets.xcassets */; };
 		F62733B02AFF022E005CD5B8 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62733AF2AFF022E005CD5B8 /* SplashView.swift */; };
+		F62733B62AFF0505005CD5B8 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62733B52AFF0505005CD5B8 /* SignInView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		F62733A12AFEDAFB005CD5B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F62733A42AFEDAFB005CD5B8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F62733AF2AFF022E005CD5B8 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		F62733B52AFF0505005CD5B8 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +53,7 @@
 		F627339C2AFEDAFA005CD5B8 /* MeLembreDasCompras */ = {
 			isa = PBXGroup;
 			children = (
+				F62733B12AFF04C5005CD5B8 /* SignIn */,
 				F62733AB2AFF01F1005CD5B8 /* Splash */,
 				F627339D2AFEDAFA005CD5B8 /* MeLembreDasComprasApp.swift */,
 				F62733A12AFEDAFB005CD5B8 /* Assets.xcassets */,
@@ -97,6 +100,38 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		F62733B12AFF04C5005CD5B8 /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				F62733B42AFF04F5005CD5B8 /* View */,
+				F62733B32AFF04D3005CD5B8 /* ViewModel */,
+				F62733B22AFF04CD005CD5B8 /* Model */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
+		F62733B22AFF04CD005CD5B8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F62733B32AFF04D3005CD5B8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F62733B42AFF04F5005CD5B8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F62733B52AFF0505005CD5B8 /* SignInView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,6 +204,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F62733B62AFF0505005CD5B8 /* SignInView.swift in Sources */,
 				F627339E2AFEDAFA005CD5B8 /* MeLembreDasComprasApp.swift in Sources */,
 				F62733B02AFF022E005CD5B8 /* SplashView.swift in Sources */,
 			);
