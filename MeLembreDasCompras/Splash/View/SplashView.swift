@@ -22,7 +22,8 @@ extension SplashView {
                .resizable()
                .scaledToFit()
                .frame(maxWidth: .infinity, maxHeight: .infinity)
-               .padding(20)
+               .padding(90)
+               .shadow(color: .blue, radius: 15, x: 0, y: 0)
      }
 }
 

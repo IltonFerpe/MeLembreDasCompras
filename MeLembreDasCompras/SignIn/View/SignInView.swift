@@ -14,10 +14,12 @@ struct SignInView: View {
                     emailField
                         .padding()
                     passwordField
-                    registerLink
+                     enterButton
+                          .padding()
+                    
                      
                      Text("Ainda não possui um login ativo?")
-                     
+                     registerLink
                      Text("Copyright: @Ilton.Dev")
                          .foregroundColor(Color.gray)
                 }
@@ -75,11 +77,25 @@ extension SignInView {
 }
 
 extension SignInView {
+     var enterButton: some View {
+          Button("Entrar") {
+               
+          }
+          .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/)
+          .padding()
+          .background(Color.blue)
+          .foregroundColor(.white)
+          .cornerRadius(50.0)
+          
+     }
+}
+
+extension SignInView {
     var registerLink: some View {
          Button(action: {
              // Ação ao pressionar o botão de cadastro
          }) {
-             NavigationLink(destination: Text("Página de Cadastro")) {
+             NavigationLink(destination: SignUpView()) {
                  Text("Cadastro")
              }
              .navigationBarTitle("Login", displayMode: .inline)
